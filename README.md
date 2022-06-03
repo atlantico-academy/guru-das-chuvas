@@ -1,4 +1,4 @@
-# <Previsão de Precipitação para as Regiões Hidrográficas do Estado do Ceará>
+# Previsão de Precipitação para as Regiões Hidrográficas do Estado do Ceará
 
 As precipitações sobre o Estado do Ceará são caracterizadas
 por elevada variabilidade espacial e temporal. Antecipar 
@@ -26,7 +26,7 @@ de previsão mensal de precipitação para as Regiões Hidrográficas do Ceará.
 
 ## Conteúdo
 
-No contexto deste projeto, os seguintes notebook foram gerados:
+ No contexto deste projeto, os seguintes notebook foram gerados:
 
  1 - pre-processing.ipynb
  Este notebook realiza a leitura dos dados
@@ -45,3 +45,6 @@ No contexto deste projeto, os seguintes notebook foram gerados:
  - [Diógenes Fontenele](https://github.com/diogenes-fontenele)
  - [Fabrício Teixeira](https://github.com/fabzfta)
  - [Ana Furtado](https://github.com/mabiapines)
+ - [Gabryel Guedes](https://github.com/gabryelsguedes)
+ - [Beatriz Nishi](https://github.com/bcnishi)
+ - [Janaide Nogueira](https://github.com/janaidenogueira)
