@@ -1,59 +1,50 @@
-# <Título do projeto>
+# Previsão de Precipitação para as Regiões Hidrográficas do Estado do Ceará
 
-Insira aqui uma introdução para que o leitor entenda o contexto e os problemas identificados. Tente apresetnar uma justificativa para o projeto. É desejável que também se insira um [graphical abstract](https://www.elsevier.com/authors/tools-and-resources/visual-abstract).
+As precipitações sobre o Estado do Ceará são caracterizadas
+por elevada variabilidade espacial e temporal. Antecipar 
+informações a respeito da distribuição e volume 
+desta variável se torna fundamental para o gerenciamento de
+risco de eventos de seca e cheia por parte dos
+setores de Recursos Hídricos e Agrícola do Estado.
+Neste sentido, este projeto se propõe a conceber um sistema
+de previsão mensal de precipitação para as Regiões Hidrográficas do Ceará.
 
 ## Objetivos e resultados chave
 
-Em termos simples, os "Objetivos" se relacionam com a meta do projeto, e os "Resultados-Chave" expressam como essa meta será alcançada. Os Objetivos e resultados chave devem ser definidos no início de um projeto. A ideia é escolher uma métrica associada a um projeto e defini-la como o objetivo. Isso mostra a meta que você deseja alcançar. Em seguida, os resultados-chave são definidos para mostrar como atingir o objetivo. Os resultados principais são mensuráveis ​​e geralmente limitados a três a cinco por objetivo.
-
-Em síntese, os objetivos estão ligados as entregas e os resultados chave aos passos que precisam se seguir para conseguir alcançar os resultados.
-Exemplo de objetivos e resultados chave aplicados a projetos de ciência de dados.
-
- - Realizar uma análise exploratória de dados de <conjunto de dados>
-    - Indentificar variáveis, descrevê-las e definir os tipos de dados
-    - Realizar transformação de variáveis (codificação)
-    - Tratar de valores faltantes e valores discrepantes
-    - ...
- - Criar modelo de detecção de fakenews
-    - Realizar transformação de dados textuais utilizando o tf-idf
-    - ...
- - ...
+ - Realizar uma análise exploratória de dados Meteoceanográficos
+    - Idênticas e extrair variáveis meteorológicas e oceânicas que possam
+      influenciar o processo de formação das precipitações.
+    - Organizar os valores de cada variável por ponto de grade (latitude e longitude) e Região Hidrográfica,
+      em uma série temporal.
+    - Identificar a distribuição e o volume da precipitação, bem como as variáveis que possam explicar
+      o seu comportamento.
+    
+ - Realizar a comparação entre os modelos de Aprendizado de Máquina 
+    - Realizar a normalização das variáveis.
+    - Identificar modelos preditivos e métricas de verificação dos modelos.
+    - Idênticar o modelo com melhor desempenho na previsão de precipitação.
 
 ## Conteúdo
 
-Utilize esta seção para descrever o que cada notebook faz. Se tiver gerado algum relatório, também utilize essa seção para descrevêlo. Isso facilitará a leitura.
+ No contexto deste projeto, os seguintes notebook foram gerados:
 
-## Utilização
+ 1 - pre-processing.ipynb
+ Este notebook realiza a leitura dos dados
+ de precipitação, reanálise atmosférica e
+ dados oceânicos e os organiza considerando
+ posição, o tempo (mês e ano) e o valor de cada variável.
 
-Descreva aqui quais os passos necessários (dependências externas, comandos, etc.) para replicar o seu projeto. Instalação de dependências necessárias, criação de ambientes virtuais, etc. Este modelo é baseado em um projeto utilizando o [Poetry](https://python-poetry.org/) como gerenciador de dependências e ambientes virtuais. Você pode utilizar o `conda`, ambientes virtuais genéricos do Python ou até mesmo containers do docker. Mas tente fazer algo que seja facilmente reprodutível.
+ 2 - EDA.ipynd
+ Este notebook realiza a Análise Exploratória de Dados,
+ a qual descreve a distribuição mensal dos dados de precipitação
+ e apresenta a coordenação e o scatter plot entre as variáveis.
+
+## Utilização 
 
 ## Desenvolvedores
- - [Contribuidor 1](http://github.com/contribuidor_1)
- - [Contribuidor 2](http://github.com/contribuidor_2)
-
-## Organização de diretórios
-
-> **Nota**: essa seção é somente para entendimento do usuário do template. Por favor removê-la quando for atualizar este `README.md`
-
-```
-.
-├── data/                   # Diretório contendo todos os arquivos de dados (Geralmente está no git ignore ou git LFS)
-│   ├── external/           # Arquivos de dados de fontes externas
-│   ├── processed/          # Arquivos de dados processados
-│   └── raw/                # Arquivos de dados originais, imutáveis
-├── docs/                   # Documentação gerada através de bibliotecas como Sphinx
-├── models/                 # Modelos treinados e serializados, predições ou resumos de modelos
-├── notebooks/              # Diretório contendo todos os notebooks utilizados nos passos
-├── references/             # Dicionários de dados, manuais e todo o material exploratório
-├── reports/                # Análioses geradas como html, latex, etc
-│   └── figures/            # Imagens utilizadas nas análises
-├── src/                    # Código fonte utilizado nesse projeto
-│   ├── data/               # Classes e funções utilizadas para download e processamento de dados
-│   ├── deployment/         # Classes e funções utilizadas para implantação do modelo
-│   └── model/              # Classes e funções utilizadas para modelagem
-├── pyproject.toml          # Arquivo de dependências para reprodução do projeto
-├── poetry.lock             # Arquivo com subdependências do projeto principal
-├── README.md               # Informações gerais do projeto
-└── tasks.py                # Arquivo com funções para criação de tarefas utilizadas pelo invoke
-
-```
+ - [Diógenes Fontenele](https://github.com/diogenes-fontenele)
+ - [Fabrício Teixeira](https://github.com/fabzfta)
+ - [Ana Furtado](https://github.com/mabiapines)
+ - [Gabryel Guedes](https://github.com/gabryelsguedes)
+ - [Beatriz Nishi](https://github.com/bcnishi)
+ - [Janaide Nogueira](https://github.com/janaidenogueira)
